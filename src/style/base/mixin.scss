@@ -1,5 +1,4 @@
 body{
-
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
@@ -8,6 +7,9 @@ body{
     box-sizing: border-box;
 }
 
+main{
+    padding: 0 30px;
+}
 // error 
 
 @mixin errh2{
@@ -21,11 +23,7 @@ body{
 }
 
 @mixin errp{
-
-
     font: {
-
-
         size: 36px;
         weight: 500;
     }
@@ -45,9 +43,6 @@ body{
 }
 
 // FOOTER //
-
-
-
 
 @mixin footer{
 
@@ -79,4 +74,74 @@ body{
     gap: 57px;
     font-size: 25px;
     color: $color-black;
+}
+
+// HOME //
+
+@mixin containerCards{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: $color-grey1;
+    padding: 35px;
+    border-radius: 20px;
+    margin:35px 0 ;
+}
+@mixin cards {
+
+    background-color: $color-commun;
+    position: relative;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+
+@mixin image{
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@mixin h3{
+    position: absolute;
+    font-size: 18px;
+    bottom: 10px;
+    left: 10px;
+    color: $color-white; 
+}
+@mixin before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// BANNER
+
+@mixin bannerContainer{
+
+    position: relative;
+    width: 100%;
+    max-width: 1240px; 
+    height: 223px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+@mixin textBold{
+    font-size: 48px;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    top: 30%; 
+    left: 65%; 
+    transform: translate(-50%, -50%); 
+    color: $color-white;
 }
