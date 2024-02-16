@@ -1,0 +1,11 @@
+
+
+.footerContainer{
+
+    background-color: $color-black;
+    @include footer;
+    p{
+
+        color: $color-white;
+    }
+}

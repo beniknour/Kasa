@@ -1,0 +1,34 @@
+@import '/src/style/base/mixin.scss';
+
+.errorContainer{
+    color: $color-commun;
+    h2{
+
+        
+        
+
+        @include errh2;
+        margin: 0;
+    
+ 
+    }
+    p{
+
+
+        @include errp;
+    
+
+    }
+    a{
+
+        color: $color-black;
+        font-size: 18px;
+     
+        
+    }
+
+    @include div;
+ 
+    
+  
+}
