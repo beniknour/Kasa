@@ -8,9 +8,11 @@ const Header = () =>{
     return(
 
 
-        <header className="headerContainer">
-            <img className='logoKasa' src={logo} alt="Logo de Kasa" />
-            <Nav/>
+        <header className="header">
+            <div className='container'>
+                <img className='logoKasa' src={logo} alt="Logo de Kasa" />
+                <Nav/>
+            </div>
         </header>
     );
 }

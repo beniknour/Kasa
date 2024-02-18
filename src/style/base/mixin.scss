@@ -6,10 +6,12 @@ body{
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 main{
     padding: 0 45px;
+    height: 100%;
     @media screen and (max-width:$breakpoint) {
         
         padding:  10px;
@@ -39,13 +41,13 @@ main{
 }
 
 @mixin div{
-
-    max-width: 1400px;
+    min-height: 1050px;
     padding-bottom: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    justify-content: space-evenly;
     
 }
 
@@ -73,7 +75,11 @@ main{
     justify-content: space-between;
     padding: 30px 45px;
 }
+@mixin HeaderContainer{
+    display: flex;
+    justify-content: center;
 
+}
 @mixin nav{
     padding: 0;
     display: flex;

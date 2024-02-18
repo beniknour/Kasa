@@ -1,8 +1,11 @@
-.headerContainer{
+.header{
+
+    @include HeaderContainer;
+}
+.container{
 
     @include container;
 }
-
 .logoKasa{
 
 

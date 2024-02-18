@@ -1,0 +1,16 @@
+.bannerAbout {
+
+    @include bannerContainer;
+    @media screen and (max-width:$breakpoint) {
+        height: 111px;
+    }
+    img{
+        @include image;
+
+    }
+}
+  
+.bannerAbout::before {
+    @include before;
+    background: linear-gradient(rgba(14, 13, 13, 0.411), rgba(0, 0, 0, 0.7));
+}
