@@ -7,7 +7,7 @@ const Banner= () =>{
 
         <div className="bannerContainer">
             <img className="bannerImg" src={banner} alt="paysage montagneux"/>
-            <p className="bannerText">Chez vous, partout et ailleurs</p>
+            <h2 className="bannerText">Chez vous, partout et ailleurs</h2>
         </div>
     )
 }

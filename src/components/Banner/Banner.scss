@@ -1,6 +1,10 @@
 .bannerContainer {
 
     @include bannerContainer;
+    @media screen and (max-width:$breakpoint) {
+        height: 111px;
+  
+    }
 }
   
 .bannerImg{
@@ -10,7 +14,12 @@
   
 .bannerText{
     @include textBold;
-  }
+    @media screen and (max-width:$breakpoint) {
+        font-size: 24px;
+        padding:  30px 170px 30px 30px ;
+  
+    }
+}
 
 .bannerContainer::before {
     @include before;

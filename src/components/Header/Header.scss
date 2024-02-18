@@ -3,3 +3,11 @@
     @include container;
 }
 
+.logoKasa{
+
+
+    @media screen and (max-width:$breakpoint) {
+        width: 145px;
+  
+    }
+}

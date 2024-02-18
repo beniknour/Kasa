@@ -3,32 +3,35 @@
 .errorContainer{
     color: $color-commun;
     h2{
-
-        
-        
-
         @include errh2;
         margin: 0;
-    
- 
+        @media screen and (max-width:$breakpoint) {
+            font-size: 96px;
+      
+        }
     }
     p{
-
-
         @include errp;
-    
-
+        @media screen and (max-width:$breakpoint) {
+            font-size: 18px;
+      
+        }
     }
     a{
-
         color: $color-black;
         font-size: 18px;
-     
+        @media screen and (max-width:$breakpoint) {
+            font-size: 14px;
+      
+        }
         
     }
 
     @include div;
- 
-    
+    @media screen and (max-width:$breakpoint) {
+        gap: 90px;
+        padding-bottom: 120px;
   
+    }
+
 }

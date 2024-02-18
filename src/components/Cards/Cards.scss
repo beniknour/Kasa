@@ -1,21 +1,29 @@
 .cardsContainer {
     @include containerCards;
-  }
+    @media screen and (max-width:$breakpoint) {
+      background-color: $color-white;
+      padding: 0;
+    }
+}
   
   .cards {
     @include cards;
-  }
+    @media screen and (max-width:$breakpoint) {
+      width: 100%;
+      
+    }
+}
   
   .cards img {
     @include image;
     
   
-  }
+}
   .cards h3 {
     @include h3;
     
-  }
+}
   .cards::before {
     @include before;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(68, 68, 68, 0.7));
-  }
+}

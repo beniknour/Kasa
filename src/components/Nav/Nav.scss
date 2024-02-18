@@ -1,6 +1,11 @@
 .nav ul{
 
     @include nav;
+    @media screen and (max-width:$breakpoint) {
+        font-size: 12px;
+        gap: 26px;
+  
+    }
 }
 
 .nav ul li a{

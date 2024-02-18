@@ -9,7 +9,7 @@ const Header = () =>{
 
 
         <header className="headerContainer">
-            <img src={logo} alt="Logo de Kasa" />
+            <img className='logoKasa' src={logo} alt="Logo de Kasa" />
             <Nav/>
         </header>
     );
