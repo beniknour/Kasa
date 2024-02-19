@@ -1,4 +1,5 @@
 import BannerAbout from "../../components/AboutBanner/AboutBanner";
+import Collapse from "../../components/Collapse/Collapse";
 function About (){
 
     return(
@@ -6,7 +7,7 @@ function About (){
         <>
 
         <BannerAbout />
-
+        <Collapse />
         </>
     )
         

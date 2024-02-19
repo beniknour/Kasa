@@ -17,6 +17,7 @@ main{
         padding:  10px;
   
     }
+
     
 }
 // error 
@@ -158,4 +159,42 @@ main{
     left: 48%; 
     transform: translate(-50%, -50%); 
     color: $color-white;
+}
+
+// ABOUT //
+
+@mixin collapseContainer{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+}
+@mixin divCollapse{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6060;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px 10px 15px;
+    max-width: 1023px; 
+    width: 100%;
+    align-items: center;
+
+}
+
+@mixin txtP{
+    
+    background-color: $color-grey;
+    margin: 0px;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 18px;
+    padding: 15px;
+
 }
