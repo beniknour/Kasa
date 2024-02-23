@@ -11,7 +11,7 @@ const CollapseSection = ({ title, content }) => {
         <img
           className={`arrow-icon ${visible ? 'open' : 'closed'}`}
           src={fleche}
-          alt={`Arrow ${visible ? 'down' : 'up'}`}
+          alt={`Arrow`}
         />
       </div>
       {visible && (
