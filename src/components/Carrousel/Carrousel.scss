@@ -1,0 +1,29 @@
+.carrousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  
+    .slide {
+      @include slide;
+    }
+  
+    .counter {
+      @include counter;
+    }
+  
+    .carrouselArrow {
+      @include arrow;
+      @media screen and (min-width:$breakpoint_large) {      
+        width: 1190px;
+    }
+    }
+  
+    .arrow {
+      cursor: pointer;
+    }
+
+}
+  

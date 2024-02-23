@@ -1,5 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import load from '../../assets/load.svg';
+
 const Card = ({ cover, title }) => {
   const [loading, setLoading] = useState(true);
 
@@ -11,22 +12,22 @@ const Card = ({ cover, title }) => {
     return () => clearTimeout(timer); 
   }, []);
   return (
-    <div className='cards'>
-      {loading && 
-      <img src={load} alt='load'/>
-      }
-      {!loading && (
-        <img
-          src={cover}
-          alt={title}
-          style={{
-            display: loading ? 'none' : 'block',
-          }}
-        />
-      )
-    }
-    <h3>{title}</h3>
-    </div>
+      <div className='cards'>
+        {loading && 
+        <img src={load} alt='load'/>
+        }
+        {!loading && (
+          <img
+            src={cover}
+            alt={title}
+            style={{
+              display: loading ? 'none' : 'block',
+            }}
+          />
+        )
+        }
+        <h3>{title}</h3>
+      </div>
   );
 };
 

@@ -10,6 +10,8 @@ body{
 }
 
 main{
+    align-self: center;
+    flex-grow: 1;
     padding: 0 45px;
     height: 100%;
     @media screen and (max-width:$breakpoint) {
@@ -197,4 +199,34 @@ main{
     font-size: 18px;
     padding: 15px;
 
+}
+
+// Carrousel
+
+@mixin slide{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 415px;
+    max-width: 1240px;
+    border-radius: 25px;
+}
+@mixin counter{
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-white;
+}
+
+@mixin arrow{
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    transform: translateY(-50%);
 }
