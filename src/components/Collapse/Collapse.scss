@@ -35,3 +35,23 @@
 
     @include txtP;
 }
+
+
+// logement
+
+.collapse_logement{
+
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    @media screen and (max-width:$breakpoint) {      
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul{
+
+        list-style-type: none;
+    }
+
+}
