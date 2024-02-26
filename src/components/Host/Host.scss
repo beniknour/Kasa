@@ -1,0 +1,21 @@
+
+.host-container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    img{
+
+        border-radius: 50%;
+        height: 64px;
+        overflow: hidden;
+        width: 64px;
+
+    }
+    p{
+        font-size: 22px;
+        color: $color-commun;
+        text-align: right;
+    }
+}

@@ -31,7 +31,8 @@
     max-width: 1023px; 
     width: 100%;
 }
-.txt p{
+.txt p, 
+.txt ul{
 
     @include txtP;
 }

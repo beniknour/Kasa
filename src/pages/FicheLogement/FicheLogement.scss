@@ -1,0 +1,27 @@
+.Container_zero{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+
+.Container_one{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+
+
+.Container_two{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
