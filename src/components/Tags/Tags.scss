@@ -1,0 +1,22 @@
+.tagsContainer{ 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    p{
+        color: $color-white;
+        background-color: $color-commun;
+        padding: 7px 10px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    
+}
+
+.tagRateContainer{
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
