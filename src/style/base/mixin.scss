@@ -8,15 +8,18 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
-
-
+.root, main, .App{
+    display: flex;
+    flex-direction: column;
+}
 main{
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-self: center;
     flex-grow: 1;
     padding: 0 80px;
-    
+
     min-height: 1040px;
     @media screen and (max-width:$breakpoint) {
         
@@ -83,11 +86,12 @@ main{
     flex-grow: 1;
     justify-content: space-between;
     padding: 30px 80px;
+    gap: 10px;
 }
 @mixin HeaderContainer{
     display: flex;
     justify-content: center;
-
+    align-items: center; 
 }
 @mixin nav{
     padding: 0;
