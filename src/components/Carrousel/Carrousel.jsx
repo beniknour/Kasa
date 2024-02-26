@@ -24,8 +24,8 @@ const Carrousel = ({ pictures }) => {
     return (
       <div className="carrousel">
         <div className='carrouselArrow'>
-            <img src={left} alt="gauche" onClick={prevSlide} className="arrow left" />
-            <img src={right} alt="droite" onClick={nextSlide} className="arrow right" />
+            <img src={left} alt="left" onClick={prevSlide} className="arrow left" />
+            <img src={right} alt="right" onClick={nextSlide} className="arrow right" />
         </div>
         <img src={pictures[currentIndex]} alt={`Slide ${currentIndex}`} className="slide" />
         <p className="counter">

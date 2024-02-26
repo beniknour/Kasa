@@ -5,6 +5,10 @@
 .container{
 
     @include container;
+    @media screen and (max-width:$breakpoint) {
+        padding: 20px 25px;
+  
+    }
 }
 .logoKasa{
 

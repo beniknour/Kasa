@@ -13,42 +13,44 @@ const FicheLogement = () => {
   const logement = data.find((item) => item.id === id);
 
   return (
-    <div>
+    <div className='logement-container'>
       {logement && (
         <>
           <Carrousel pictures={logement.pictures} />
-          <div className='Container_zero'>
-            <div className='Container_one'>
-              <Title title={logement.title} location={logement.location}/>
-              <Tags LogementProp={id}/>
+          <div className='fiche-container'>
+            <div className='Container_zero'>
+              <div className='Container_one'>
+                <Title title={logement.title} location={logement.location}/>
+                <Tags LogementProp={id}/>
+              </div>
+              
+              <div className='Container_two'>
+                <Host propHost={logement.host} />
+                <Rate rating={logement.rating}/>
+              </div>
             </div>
-            
-            <div className='Container_two'>
-              <Host propHost={logement.host} />
-              <Rate rating={logement.rating}/>
+            <div className='collapse_logement'>
+              <Collapse
+                section={{
+                  title: "Description",
+                  content: logement.description,
+                }}
+              />
+              <Collapse
+                section={{
+                  title: "Équipements",
+                  content: (
+                    <ul>
+                      {logement.equipments.map((equipment, index)=>
+                        (
+                          <li key={index}>{equipment}</li>
+                        )
+                      )}
+                    </ul>
+                  )
+                }}
+              />
             </div>
-          </div>
-          <div className='collapse_logement'>
-            <Collapse
-              section={{
-                title: "Description",
-                content: logement.description,
-              }}
-            />
-            <Collapse
-              section={{
-                title: "Équipements",
-                content: (
-                  <ul>
-                    {logement.equipments.map((equipment, index)=>
-                      (
-                        <li key={index}>{equipment}</li>
-                      )
-                    )}
-                  </ul>
-                )
-              }}
-            />
           </div>
         </>
       )}

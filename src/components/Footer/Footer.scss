@@ -12,4 +12,8 @@
             font-size: 12px;
         }
     }
+    @media screen and (max-width:$breakpoint) {      
+        padding: 50px 134px 20px;
+    }
+
 }

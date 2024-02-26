@@ -2,7 +2,7 @@
 
     @include bannerContainer;
     @media screen and (max-width:$breakpoint) {
-        height: 111px;
+        height: 143px;
   
     }
 }
@@ -16,7 +16,7 @@
     @include textBold;
     @media screen and (max-width:$breakpoint) {
         font-size: 24px;
-        padding:  30px 170px 30px 30px ;
+        padding:  30px 62px 23px 36px ;
   
     }
 }

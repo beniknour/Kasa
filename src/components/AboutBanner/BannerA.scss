@@ -2,7 +2,7 @@
 
     @include bannerContainer;
     @media screen and (max-width:$breakpoint) {
-        height: 111px;
+        height: 154px;
     }
     img{
         @include image;

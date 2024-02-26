@@ -25,6 +25,13 @@
         font-size: 24px;
         margin: 0;
     }
+    @media screen and (max-width:$breakpoint) {      
+        padding: 7px 20px 7px 15px;
+        h2{
+
+            font-size: 14px;
+        }
+    }
 }
   
 .Collapse{
@@ -35,6 +42,10 @@
 .txt ul{
 
     @include txtP;
+    @media screen and (max-width:$breakpoint) {
+        font-size: 15px;
+        padding: 9px;
+    }
 }
 
 

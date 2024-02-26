@@ -8,6 +8,10 @@
         padding: 7px 10px;
         border-radius: 10px;
         font-weight: bold;
+        @media screen and (max-width:$breakpoint) {
+        
+            font-size: 10px;
+        }
     }
     
 }

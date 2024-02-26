@@ -17,7 +17,7 @@ const Collapse = ({ section }) => {
       </div>
       {visible && (
         <div className="txt">
-          {section.title === "Description" ? (
+          {section.title !== "Équipements" ? (
             <p>{section.content}</p>
           ) : section.content}
 
