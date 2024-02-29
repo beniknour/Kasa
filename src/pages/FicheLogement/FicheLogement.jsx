@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/Carrousel';
 import data from '../../data/logements.json';
 import Collapse from '../../components/Collapse/Collapse';
@@ -11,7 +11,10 @@ import Title from '../../components/Title/Title';
 const FicheLogement = () => {
   const { id } = useParams(); //ici useParams va extraire la valeur du paramètre 'id'
   const logement = data.find((item) => item.id === id);
+  if (!logement){
 
+    return <Navigate to="/error" />
+  }
   return (
     <div className='logement-container'>
       {logement && (

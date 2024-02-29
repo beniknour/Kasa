@@ -1,13 +1,10 @@
-
-import banner from "../../assets/images/banner.png";
-
-const Banner= () =>{
-
+const Banner = (Propsbanner)=>{
+    const {img , title, alt} = Propsbanner ;
     return(
 
         <div className="bannerContainer">
-            <img className="bannerImg" src={banner} alt="paysage montagneux"/>
-            <h2 className="bannerText">Chez vous, partout et ailleurs</h2>
+            <img className="bannerImg" src={img} alt={alt}/>
+            <h2 className="bannerText">{title}</h2>
         </div>
     )
 }

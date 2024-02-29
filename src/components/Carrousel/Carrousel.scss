@@ -20,7 +20,7 @@
     .carrouselArrow {
       @include arrow;
       @media screen and (min-width:$breakpoint_large) {      
-        width: 1190px;
+        width: 1080px;
       }
 
       @media screen and (max-width:$breakpoint) {
