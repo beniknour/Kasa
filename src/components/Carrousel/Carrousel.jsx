@@ -29,9 +29,8 @@ const Carrousel = ({ pictures }) => {
         </div>
         <img src={pictures[currentIndex]} alt={`Slide ${currentIndex}`} className="slide" />
         <p className="counter">
-        {currentIndex + 1}/{pictures.length}
+          {currentIndex + 1}/{pictures.length}
         </p>
-
       </div>
     );
   };

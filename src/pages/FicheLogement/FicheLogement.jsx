@@ -21,13 +21,13 @@ const FicheLogement = () => {
         <>
           <Carrousel pictures={logement.pictures} />
           <div className='fiche-container'>
-            <div className='Container_zero'>
-              <div className='Container_one'>
+            <div className='Container_logement'>
+              <div className='Container_title_tags'>
                 <Title title={logement.title} location={logement.location}/>
                 <Tags LogementProp={id}/>
               </div>
               
-              <div className='Container_two'>
+              <div className='Container_host_rate'>
                 <Host propHost={logement.host} />
                 <Rate rating={logement.rating}/>
               </div>

@@ -13,7 +13,7 @@ body{
     flex-direction: column;
 }
 main{
-    max-width: 14630px;
+    max-width: 1463px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -25,7 +25,7 @@ main{
         
         padding: 0 23px;
         min-height: 550px;
-  
+        padding-bottom: 20px;
     }
 
     
@@ -159,6 +159,7 @@ main{
     overflow: hidden;
     border-radius: 14px;
     margin-top: 15px;
+
 }
 
 @mixin textBold{
@@ -172,6 +173,7 @@ main{
     left: 48%; 
     transform: translate(-50%, -50%); 
     color: $color-white;
+    margin-left: 28px;
 }
 
 // ABOUT //
