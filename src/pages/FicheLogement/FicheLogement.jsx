@@ -24,7 +24,7 @@ const FicheLogement = () => {
             <div className='Container_logement'>
               <div className='Container_title_tags'>
                 <Title title={logement.title} location={logement.location}/>
-                <Tags LogementProp={id}/>
+                <Tags tags={logement.tags} />
               </div>
               
               <div className='Container_host_rate'>
