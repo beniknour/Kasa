@@ -2,18 +2,14 @@
 .title-container{
 
     h1{
-        font-weight: 400;
-        color: $color-commun;
-        margin-bottom: 4px;
+        @include title-container-h1;
         @media screen and (max-width:$breakpoint) {
         
             font-size: 20px;
         }
     }
     p{
-        margin-top: 0px;
-        font-size: 20px;
-        font-weight: 500;
+        @include title-container-p;
         @media screen and (max-width:$breakpoint) {
         
             font-size: 14px;

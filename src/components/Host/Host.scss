@@ -1,31 +1,23 @@
 
 .host-container{
 
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
+    @include host-container;
     img{
 
-        border-radius: 50%;
-        height: 64px;
-        overflow: hidden;
-        width: 64px;
+        @include host-img;
 
     }
     p{
-        font-size: 22px;
-        color: $color-commun;
-        text-align: right;
-        
+        @include host-p;
+        @media screen and (max-width:$breakpoint) {
+           width: 50px;
+        }
     }
     @media screen and (max-width:$breakpoint) {
         p{
-
             font-size: 12px ;
         }
         img{
-
             width: 35px;
             height: 35px;
         }

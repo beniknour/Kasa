@@ -243,3 +243,85 @@ main{
     padding: 30px;
     transform: translateY(-50%);
 }
+
+
+
+//HOST
+
+@mixin host-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+
+}
+@mixin host-img{
+
+    border-radius: 50%;
+    height: 64px;
+    overflow: hidden;
+    width: 64px;
+
+}
+@mixin host-p{
+
+    font-size: 22px;
+    color: $color-commun;
+    text-align: right;
+    width: 110px;
+}
+
+// title
+
+@mixin title-container-h1{
+    font-weight: 400;
+    color: $color-commun;
+    margin-bottom: 4px;
+
+}
+@mixin title-container-p{
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+// Fiche logement //
+
+@mixin container-logement{
+
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+@mixin container-title-tags{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+@mixin container-host-rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+@mixin fiche-container{
+    max-width: 1245px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+@mixin logement-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}

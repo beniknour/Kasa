@@ -1,10 +1,5 @@
 .Container_logement{
-
-    max-width: 1440px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    @include container-logement;
     @media screen and (max-width:$breakpoint) {
         
         flex-direction: column;
@@ -13,22 +8,13 @@
 
 
 .Container_title_tags{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include container-title-tags;
     
-
 }
-
-
 
 .Container_host_rate{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include container-host-rate;
     @media screen and (max-width:$breakpoint) {
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -36,19 +22,11 @@
 
 }
 .fiche-container{
-    max-width: 1245px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    @include fiche-container;
 }
 
 .logement-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include logement-container;
 
 
 }
