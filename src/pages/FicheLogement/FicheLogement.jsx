@@ -7,7 +7,7 @@ import Tags from '../../components/Tags/Tags';
 import Rate from '../../components/Rate/Rate';
 import Host from '../../components/Host/Host';
 import Title from '../../components/Title/Title';
-
+import './FicheLogement.scss';
 const FicheLogement = () => {
   const { id } = useParams(); //ici useParams va extraire la valeur du paramètre 'id'
   const logement = data.find((item) => item.id === id);

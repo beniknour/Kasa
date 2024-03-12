@@ -1,7 +1,7 @@
 import React from 'react';
 import starI from '../../assets/rates/star-inactive.png';
 import starA from '../../assets/rates/star-active.png';
-
+import './Rate.scss';
 const Rate = ({ rating }) => {
   const maxRating = 5;
   const stars = Array.from({ length: maxRating }, (_, index) => (

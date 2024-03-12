@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import fleche from "../../assets/images/fleche.png";
-
+import './Collapse.scss';
 
 const Collapse = ({ section }) => {
   const [visible, setVisible] = useState(false);

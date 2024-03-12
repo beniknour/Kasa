@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import left from '../../assets/Carrousel_Image/vector_left.png';
 import right from '../../assets/Carrousel_Image/vector_right.png';
-
+import './Carrousel.scss';
 const Carrousel = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
   

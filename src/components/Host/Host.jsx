@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Host.scss'
 const Host = ({ propHost }) => {
   return (
     <div className="host-container">

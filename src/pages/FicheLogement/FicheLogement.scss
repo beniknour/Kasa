@@ -1,3 +1,4 @@
+@import '/src/style/base/mixin.scss';
 .Container_logement{
     @include container-logement;
     @media screen and (max-width:$breakpoint) {

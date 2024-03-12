@@ -1,3 +1,5 @@
+import './Banner.scss';
+
 const Banner = (Propsbanner)=>{
     const {img , title, alt} = Propsbanner ;
     return(
