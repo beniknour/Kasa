@@ -14,7 +14,8 @@ const Card = ({ cover, title }) => {
   return (
       <div className='cards'>
         {loading && 
-        <img src={load} alt='load'/>
+            <img src={load} alt='load'/>
+
         }
         {!loading && (
           <img
@@ -28,6 +29,7 @@ const Card = ({ cover, title }) => {
         }
         <h3>{title}</h3>
       </div>
+     
   );
 };
 

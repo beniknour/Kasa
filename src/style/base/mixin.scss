@@ -126,6 +126,10 @@ main{
     overflow: hidden;
     margin-top: 30px;
     border-radius: 15px;
+    @media screen and (max-width: $breakpoint) {
+        width: 325px;
+        height: 255px ;
+    }
 
 }
 
