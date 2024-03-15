@@ -2,6 +2,7 @@
 
 .errorContainer{
     color: $color-commun;
+
     h2{
         @include errh2;
         margin: 0;
@@ -20,6 +21,7 @@
     a{
         color: $color-black;
         font-size: 18px;
+        font-weight: 500;
         @media screen and (max-width:$breakpoint) {
             font-size: 14px;
       
@@ -30,8 +32,8 @@
     @include div;
     @media screen and (max-width:$breakpoint) {
         gap: 90px;
-        padding-bottom: 120px;
         min-height: auto;
+        margin-top: 50px;
   
     }
 
